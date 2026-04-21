@@ -20,6 +20,7 @@ export const PROJECTS = [
     num: 'PROJECT_01',
     title: 'Smart-Face-Attendance-System',
     overview: 'Automated attendance system using real-time facial recognition for schools and offices.',
+    github: 'https://github.com/Gopalraj248/Smart-Face-Attendance-System',
     desc: `Integrated facial recognition system built with OpenCV and Dlib. It captures live video feed, detects faces, and matches them against a pre-trained database to log attendance automatically. Features a secure local database and analytics dashboard.`,
     relatedSkills: ['Python', 'Machine Learning', 'Deep Learning', 'Data Analysis'],
     tags: [
@@ -39,6 +40,7 @@ export const PROJECTS = [
     num: 'PROJECT_02',
     title: 'RT-DETR Object Detection',
     overview: 'High-speed object detection using the state-of-the-art RT-DETR transformer model.',
+    github: 'https://github.com/Gopalraj248/RT-DETR-Object-detection-',
     desc: `Implementation of Real-Time DEtection TRansformer (RT-DETR). Unlike traditional detectors, it uses a transformer architecture to achieve high accuracy and real-time speeds by eliminating the need for NMS. Optimized for rapid inference.`,
     relatedSkills: ['Python', 'Deep Learning', 'Machine Learning', 'MLOps / Deploy'],
     tags: [
@@ -58,6 +60,7 @@ export const PROJECTS = [
     num: 'PROJECT_03',
     title: 'Mistral-OCR App',
     overview: 'Intelligent document understanding and extraction using Mistral AI vision-language models.',
+    github: 'https://github.com/Gopalraj248/mistral-ocr-app',
     desc: `A powerful application leveraging Mistral's OCR API to extract text, tables, and mathematical expressions from complex PDFs and images. Built with Streamlit for a seamless user experience in document processing.`,
     relatedSkills: ['Python', 'NLP / LLMs', 'OCR Systems', 'MLOps / Deploy'],
     tags: [
@@ -77,6 +80,7 @@ export const PROJECTS = [
     num: 'PROJECT_04',
     title: 'Tesseract OCR Project',
     overview: 'Flexible OCR implementation using Google\'s Tesseract engine with advanced preprocessing.',
+    github: 'https://github.com/Gopalraj248/tesseractocr_project',
     desc: `A comprehensive wrapper for Tesseract OCR that handles various document formats. Includes image preprocessing pipelines like skew correction and denoising using OpenCV to maximize extraction quality for scanned files.`,
     relatedSkills: ['Python', 'OCR Systems', 'Data Analysis', 'MLOps / Deploy'],
     tags: [

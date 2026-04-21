@@ -38,6 +38,15 @@ const ProjectModal = ({ project, onClose }) => {
         </div>
 
         <div className="modal-footer">
+          {project.github && (
+            <button 
+              className="btn-secondary" 
+              onClick={() => window.open(project.github, '_blank')}
+              style={{ marginRight: '1rem' }}
+            >
+              [ VIEW_ON_GITHUB ]
+            </button>
+          )}
           <button className="btn-primary" onClick={onClose}>CLOSE DETAILS</button>
         </div>
       </div>
