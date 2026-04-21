@@ -14,14 +14,15 @@ function About() {
             real-world problems with AI.
           </p>
           <p>
-            My work revolves around building <strong>Multilingual OCR engines</strong> that process documents across
-            <strong> 10+ languages</strong> — including Hindi, English, and other Indian regional scripts. I also
-            architect <strong>AI-powered Voice Calling Agents</strong> — systems that make and receive phone calls,
-            hold natural conversations, and complete tasks autonomously using <strong>Whisper STT</strong>,
-            <strong> LLMs</strong>, and <strong>Twilio</strong>.
+            My expertise spans across <strong>Computer Vision</strong> and <strong>Natural Language Processing</strong>. 
+            I've built <strong>Smart Face Attendance Systems</strong>, implemented SOTA <strong>Object Detection</strong> using 
+            <strong> RT-DETR</strong>, and architected <strong>Multilingual OCR engines</strong> that process complex documents 
+            across 10+ languages.
           </p>
           <p>
-            I believe in <strong>shipping fast</strong>, <strong>breaking things intentionally</strong>, and
+            I also specialize in <strong>AI-powered Voice Calling Agents</strong> — systems that make and receive phone calls using 
+            <strong> Whisper STT</strong>, <strong> LLMs</strong>, and <strong>Twilio</strong>. I believe in 
+            <strong> shipping fast</strong>, <strong> breaking things intentionally</strong>, and
             <strong> learning from production</strong>.
           </p>
         </div>
@@ -38,7 +39,7 @@ function About() {
             <span className="t-out">&nbsp;&nbsp;"name": </span><span className="t-val">"Gopal Rajbhar"</span><br />
             <span className="t-out">&nbsp;&nbsp;"role": </span><span className="t-val">"Jr. AI/ML Developer"</span><br />
             <span className="t-out">&nbsp;&nbsp;"company": </span><span className="t-val">"Feat Systems"</span><br />
-            <span className="t-out">&nbsp;&nbsp;"focus": </span><span className="t-val">["OCR", "Voice AI", "LLMs"]</span><br />
+            <span className="t-out">&nbsp;&nbsp;"focus": </span><span className="t-val">["Computer Vision", "Object Detection", "OCR", "LLMs"]</span><br />
             <span className="t-out">&nbsp;&nbsp;"status": </span><span className="t-val">"Building & Shipping"</span><br />
             <span className="t-out">{'}'}</span>
           </div>
