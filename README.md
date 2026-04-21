@@ -5,37 +5,36 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 
-Professional portfolio website built with **React** and **Vite**, showcasing specialized work in Multilingual OCR systems and autonomous Voice AI agents.
+An **Intelligent Portfolio Dashboard** built with **React** and **Vite**, showcasing specialized work in Multilingual OCR systems and autonomous Voice AI agents. This site uses real-time AI-themed visualizations to represent technical expertise.
 
-## 🚀 Key Features
+## 🚀 "Elite" AI Features
 
-- **Interactive Neural Network Background:** Dynamic particle systems reacting to user input.
-- **Modern UI/UX:** Dark-mode aesthetic with neon accents and fluid scroll animations (AOS).
-- **Responsive Design:** Completely optimized for mobile, tablet, and desktop views.
-- **Timeline Journey:** Visual representation of professional and educational milestones.
-- **Functional Contact Form:** Integrated with Formspree for direct communication.
+- **Terminal Boot Sequence:** immersive terminal-style loader simulating an AI kernel initialization.
+- **Interactive Neural Network:** A custom Canvas-based background with nodes that react to mouse proximity.
+- **Brain Scan (Skill Radar):** A dynamic SVG Radar Chart for technical skill visualization with a scanning animation.
+- **Neural Link Interactivity:** Direct hover-links between skill categories and related projects for architectural clarity.
+- **AI Confidence HUD:** A real-time status dashboard that provides "analysis" messages and confidence scores based on scroll position.
+- **Production-Grade Project Modals:** Detailed architecture breakdowns and feature lists within an interactive modal UI.
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React, Vanilla CSS
+- **Frontend:** React.js, Vanilla CSS
 - **Build Tool:** Vite
-- **Animations:** AOS (Animate On Scroll)
-- **Background:** Particles.js
-- **Icons:** Custom SVG & Google Fonts (Syne, Space Mono)
+- **Animations:** AOS (Animate On Scroll), Custom CSS Keyframes
+- **Visuals:** Custom HTML5 Canvas (Neural Net), SVG Animations (Radar)
+- **Data Management:** Centralized project/skill schema for easy extensibility.
 
 ## 📂 Project Highlights
 
 ### 1. Multilingual OCR Engine
 A production-grade system capable of extracting text across **10+ languages**, including Indian regional scripts. Optimized for low-resolution and noisy document processing.
+- **Related Skills:** Python, Deep Learning, OCR Systems, Data Analysis.
 
 ### 2. Autonomous Voice AI Agent
 An intelligent calling agent that makes/receives phone calls and holds natural conversations using **Whisper STT**, **LLMs**, and **Twilio**.
+- **Related Skills:** NLP / LLMs, Voice AI, MLOps, Python.
 
 ## 💻 Getting Started
-
-### Prerequisites
-- Node.js (v18 or higher)
-- npm or yarn
 
 ### Installation
 1. Clone the repository:

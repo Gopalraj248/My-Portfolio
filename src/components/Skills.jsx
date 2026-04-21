@@ -1,32 +1,60 @@
-const skills = [
-  { name: 'Python', level: 'CORE LANGUAGE', fill: 'fill-neon', width: '95%' },
-  { name: 'Machine Learning', level: 'SKLEARN · XGBOOST', fill: 'fill-neon', width: '85%' },
-  { name: 'Deep Learning', level: 'PYTORCH · TENSORFLOW', fill: 'fill-blue', width: '80%' },
-  { name: 'OCR Systems', level: 'TESSERACT · EASYOCR', fill: 'fill-blue', width: '90%' },
-  { name: 'NLP / LLMs', level: 'TRANSFORMERS · OPENAI', fill: 'fill-purple', width: '85%' },
-  { name: 'Voice AI', level: 'WHISPER · TTS · TWILIO', fill: 'fill-purple', width: '80%' },
-  { name: 'Data Analysis', level: 'PANDAS · NUMPY', fill: 'fill-neon', width: '90%' },
-  { name: 'MLOps / Deploy', level: 'FASTAPI · DOCKER · GIT', fill: 'fill-blue', width: '70%' },
-]
+import { useEffect, useRef } from 'react';
+import { SKILLS } from '../constants';
+import SkillRadar from './SkillRadar';
 
-function Skills() {
+function Skills({ setHoveredSkill }) {
+  const skillRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    skillRefs.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section id="skills" style={{ borderTop: '1px solid var(--border)' }}>
       <div className="section-header">
         <span className="section-num">02 /</span>
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title">Brain Scan / Skills</h2>
         <div className="section-line"></div>
       </div>
-      <div className="skills-grid" data-aos="fade-up">
-        {skills.map((skill, i) => (
-          <div className="skill-card" key={i}>
-            <div className="skill-name">{skill.name}</div>
-            <div className="skill-level mono">{skill.level}</div>
-            <div className="skill-bar">
-              <div className={`skill-fill ${skill.fill}`} style={{ width: skill.width }}></div>
+      
+      <div className="skills-container">
+        <div className="skills-visual" data-aos="zoom-in">
+          <SkillRadar />
+        </div>
+
+        <div className="skills-grid">
+          {SKILLS.map((skill, i) => (
+            <div 
+              className="skill-card" 
+              key={i} 
+              data-aos="fade-left" 
+              data-aos-delay={i * 50}
+              onMouseEnter={() => setHoveredSkill(skill.name)}
+              onMouseLeave={() => setHoveredSkill(null)}
+            >
+              <div className="skill-name">{skill.name}</div>
+              <div className="skill-level mono">{skill.level}</div>
+              <div className="skill-bar" ref={el => skillRefs.current[i] = el}>
+                <div 
+                  className={`skill-fill ${skill.fill}`} 
+                  style={{ '--width': skill.width }}
+                ></div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   )
