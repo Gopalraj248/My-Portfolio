@@ -18,42 +18,78 @@ export const SKILLS = [
 export const PROJECTS = [
   {
     num: 'PROJECT_01',
-    title: 'Multilingual OCR Engine',
-    overview: 'A production-grade OCR system that extracts text from documents, images, and scanned files across 10+ languages.',
-    desc: `Detailed architecture involving EasyOCR and Tesseract for multilingual support. Optimized for noisy conditions like skewed images and low resolution. Built with FastAPI for high-performance inference.`,
-    relatedSkills: ['Python', 'Machine Learning', 'Deep Learning', 'OCR Systems', 'Data Analysis', 'MLOps / Deploy'],
+    title: 'Smart-Face-Attendance-System',
+    overview: 'Automated attendance system using real-time facial recognition for schools and offices.',
+    desc: `Integrated facial recognition system built with OpenCV and Dlib. It captures live video feed, detects faces, and matches them against a pre-trained database to log attendance automatically. Features a secure local database and analytics dashboard.`,
+    relatedSkills: ['Python', 'Machine Learning', 'Deep Learning', 'Data Analysis'],
     tags: [
       { label: 'Python', type: 'tag-neon' },
-      { label: 'EasyOCR', type: 'tag-neon' },
-      { label: 'Tesseract', type: 'tag-neon' },
-      { label: 'OpenCV', type: 'tag-blue' },
-      { label: 'FastAPI', type: 'tag-blue' },
+      { label: 'OpenCV', type: 'tag-neon' },
+      { label: 'Dlib', type: 'tag-blue' },
+      { label: 'Face Recognition', type: 'tag-blue' },
     ],
     features: [
-      'Support for 10+ Indian regional languages',
-      'Skew correction and image preprocessing',
-      'Mixed-script document detection',
-      'API deployment for real-time extraction'
+      'Real-time multiple face detection',
+      'Automated attendance logging',
+      'Secure data storage',
+      'Analytics dashboard for occupancy'
     ]
   },
   {
     num: 'PROJECT_02',
-    title: 'Multilingual Voice calling Agent',
-    overview: 'An autonomous AI voice agent that makes and receives phone calls, holds natural conversations.',
-    desc: `Built using Whisper for STT and high-quality TTS engines. Integrated with Twilio/WebRTC for telephony. Handles dynamic user inputs and completes tasks without human intervention with low latency.`,
-    relatedSkills: ['Python', 'Machine Learning', 'NLP / LLMs', 'Voice AI', 'MLOps / Deploy'],
+    title: 'RT-DETR Object Detection',
+    overview: 'High-speed object detection using the state-of-the-art RT-DETR transformer model.',
+    desc: `Implementation of Real-Time DEtection TRansformer (RT-DETR). Unlike traditional detectors, it uses a transformer architecture to achieve high accuracy and real-time speeds by eliminating the need for NMS. Optimized for rapid inference.`,
+    relatedSkills: ['Python', 'Deep Learning', 'Machine Learning', 'MLOps / Deploy'],
     tags: [
       { label: 'Python', type: 'tag-neon' },
-      { label: 'Whisper STT', type: 'tag-neon' },
-      { label: 'LLM', type: 'tag-neon' },
-      { label: 'TTS', type: 'tag-blue' },
-      { label: 'Twilio / WebRTC', type: 'tag-blue' },
+      { label: 'PyTorch', type: 'tag-neon' },
+      { label: 'RT-DETR', type: 'tag-blue' },
+      { label: 'Transformers', type: 'tag-blue' },
     ],
     features: [
-      'Low-latency voice interaction',
-      'Support for multiple languages',
-      'Dynamic intent recognition',
-      'Autonomous task completion'
+      'End-to-end detection transformer',
+      'Real-time inference speed',
+      'SOTA accuracy in COCO dataset',
+      'NMS-free processing pipeline'
+    ]
+  },
+  {
+    num: 'PROJECT_03',
+    title: 'Mistral-OCR App',
+    overview: 'Intelligent document understanding and extraction using Mistral AI vision-language models.',
+    desc: `A powerful application leveraging Mistral's OCR API to extract text, tables, and mathematical expressions from complex PDFs and images. Built with Streamlit for a seamless user experience in document processing.`,
+    relatedSkills: ['Python', 'NLP / LLMs', 'OCR Systems', 'MLOps / Deploy'],
+    tags: [
+      { label: 'Python', type: 'tag-neon' },
+      { label: 'Mistral AI', type: 'tag-neon' },
+      { label: 'LLM', type: 'tag-blue' },
+      { label: 'Streamlit', type: 'tag-blue' },
+    ],
+    features: [
+      'Complex document understanding',
+      'Structured Markdown/JSON output',
+      'Support for math and table extraction',
+      'High accuracy LLM-based OCR'
+    ]
+  },
+  {
+    num: 'PROJECT_04',
+    title: 'Tesseract OCR Project',
+    overview: 'Flexible OCR implementation using Google\'s Tesseract engine with advanced preprocessing.',
+    desc: `A comprehensive wrapper for Tesseract OCR that handles various document formats. Includes image preprocessing pipelines like skew correction and denoising using OpenCV to maximize extraction quality for scanned files.`,
+    relatedSkills: ['Python', 'OCR Systems', 'Data Analysis', 'MLOps / Deploy'],
+    tags: [
+      { label: 'Python', type: 'tag-neon' },
+      { label: 'Tesseract', type: 'tag-neon' },
+      { label: 'OpenCV', type: 'tag-blue' },
+      { label: 'Image Processing', type: 'tag-blue' },
+    ],
+    features: [
+      'Support for 100+ languages',
+      'Image denoising and Binarization',
+      'Skew detection and correction',
+      'Batch processing for multi-page PDF/Images'
     ]
   }
 ];

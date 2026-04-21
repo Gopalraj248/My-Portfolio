@@ -1031,3 +1031,37 @@ footer {
     bottom: 1rem;
   }
 }
+
+/* INTERACTIVE RADAR HANDLES */
+.radar-handle {
+  transition: r 0.2s ease, opacity 0.2s ease;
+}
+
+.radar-handle:hover {
+  r: 9;
+  opacity: 1 !important;
+}
+
+/* RESET SYSTEM BUTTON */
+.reset-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 0.4rem 1rem;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+
+.reset-btn:hover {
+  border-color: var(--neon);
+  color: var(--neon);
+  background: rgba(0, 255, 157, 0.05);
+  box-shadow: 0 0 10px rgba(0, 255, 157, 0.1);
+}
+
+.section-header {
+  flex-wrap: wrap;
+}
