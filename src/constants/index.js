@@ -99,8 +99,8 @@ export const EXPERIENCE = [
     title: 'Junior AI/ML Developer',
     company: 'Feat Systems, Mumbai',
     period: 'Present',
-    description: 'Building production-grade intelligent systems. Specialized in Multilingual OCR engines across 10+ languages and autonomous Voice AI calling agents using Whisper, LLMs, and Twilio.',
-    tags: ['Applied AI', 'Production']
+    description: 'Building production-grade intelligent systems. Specialized in Multilingual OCR engines and autonomous Voice AI calling agents using Whisper, LLMs, and Twilio.',
+    tags: ['Applied AI', 'OCR', 'Voice AI', 'Production']
   },
   {
     title: 'Education',

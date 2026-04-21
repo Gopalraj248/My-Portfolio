@@ -15,7 +15,7 @@ function Hero() {
         </h1>
         <p className="hero-desc">
           Building intelligent systems that solve <span>real problems.</span><br />
-          Specialized in <span>Multilingual OCR</span> &amp; <span>Voice AI Agents</span> —<br />
+          Specialized in <span>Multilingual OCR</span> & <span>Voice AI Agents</span> —<br />
           turning raw data into working products.
         </p>
         <div className="hero-btns">

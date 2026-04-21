@@ -160,8 +160,10 @@ h1 .name {
 h1 .role {
   display: block;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(0, 255, 157, 0.5);
-  font-style: italic;
+  -webkit-text-stroke: 1.5px rgba(0, 255, 157, 0.6);
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.05em;
 }
 
 .hero-desc {
